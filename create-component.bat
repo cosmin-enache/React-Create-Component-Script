@@ -1,0 +1,1 @@
+python C:\Users\Cosmin\OneDrive\Documents\PATH-SCRIPTS\script.py %1
