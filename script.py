@@ -5,10 +5,21 @@ import os
 def make_component_dir(name):
     os.mkdir(".\components\\" + name)
 
+def split_cap(name):
+    arr = name.split("-")
+    res = ""
+
+    for v in arr:
+        res += v.capitalize()
+    
+    return res
 
 def write_component(name):
     with open(".\components\\" + name + "\\" + name + ".component.jsx", "w") as file:
-        file.write("")
+        cap_name = split_cap(name)
+        file.write(
+            "const " + cap_name + " = () => {\n\treturn(\n\t\t\n\t)\n};\n\nexport default " + cap_name + ";"
+        )
 
 
 def write_stylesheet(name):
