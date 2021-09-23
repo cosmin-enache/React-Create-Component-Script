@@ -1,1 +1,1 @@
-python C:\Users\Cosmin\OneDrive\Documents\PATH-SCRIPTS\script.py %1
+python C:\Users\Cosmin\OneDrive\Documents\PATH-SCRIPTS\script-with-css.py %1
